@@ -15,3 +15,8 @@ shrinkwrap.yaml
 libs/
 sass/vendors/
 *.map
+bower_components/
+build/
+zip/
+aero-debug.log
+aero-deploy.tar.gz

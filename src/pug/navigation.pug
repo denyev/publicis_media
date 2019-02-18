@@ -6,21 +6,44 @@ nav.navigation
                 href="index.html"
             )
                 | Главная
+        li.navigation__item
             a.navigation__link(
                 class={'navigation__item--active': page === ''}
                 href="#"
             )
                 | О компании
+        li.navigation__item
             a.navigation__link(
             class={'navigation__item--active': page === ''}
             href="#"
             )
                 | Новости
+        li.navigation__item
             a.navigation__link(
             class={'navigation__item--active': page === ''}
             href="#"
             )
                 | Карьера
+            ul.dropdown
+                li.dropdown__item
+                    a.dropdown__link(
+                        class={'navigation__item--active': page === ''}
+                        href="#"
+                    )
+                        | Вакансии
+                li.dropdown__item
+                    a.dropdown__link(
+                    class={'navigation__item--active': page === ''}
+                    href="#"
+                    )
+                        | Преимущества
+                li.dropdown__item
+                    a.dropdown__link(
+                    class={'navigation__item--active': page === ''}
+                    href="#"
+                    )
+                        | Студентам
+        li.navigation__item
             a.navigation__link(
             class={'navigation__item--active': page === ''}
             href="#"

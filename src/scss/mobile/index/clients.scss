@@ -1,0 +1,55 @@
+.clients {
+  background-color: $color-gallery;
+  text-align: center;
+}
+
+.clients__list {
+  @include unstyle-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: rem(42);
+  margin-bottom: rem(26);
+  padding: 0 rem(23);
+}
+
+.clients__item {
+  display: block;
+  width: rem(137);
+  height: rem(137);
+  background-image: url("../images/sprite.png");
+  background-repeat: no-repeat;
+  background-position-x: rem(-5);
+  background-size: cover;
+
+  &--philip-morris {
+    background-position-y: rem(-275);
+  }
+
+  &--mcdonalds {
+    background-position-y: rem(-145);
+  }
+
+  &--procter-and-gamble {
+    background-position-y: rem(-415);
+  }
+
+  &--wbd {
+    background-position-y: rem(-555);
+  }
+  &--baltika {
+    background-position-y: rem(0);
+  }
+}
+
+.clients__more {
+  display: inline-block;
+  margin: 0 auto rem(58) auto;
+  padding: rem(12) rem(60);
+  background-color: unset;
+  border: 1px solid $black;
+  line-height: rem(26);
+  font-size: rem(16);
+  text-transform: uppercase;
+}
+

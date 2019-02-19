@@ -1,4 +1,5 @@
-$sprites: ();
+$sprites: (
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {

@@ -1,0 +1,25 @@
+.hero {
+  padding: rem(50) rem(30) rem(94) rem(39);
+  background-image: url("../images/hero/hero-mobile.jpg");
+  background-position: 50% 50%;
+  background-size: unset;
+  background-repeat: repeat-x;
+}
+
+.hero__title {
+  font-size: rem(29);
+  text-transform: uppercase;
+  line-height: rem(47);
+  color: $white;
+}
+
+.hero__list {
+  @include unstyle-list;
+  font-size: rem(16);
+  text-transform: uppercase;
+  color: $white;
+}
+
+.hero__item {
+  line-height: rem(30);
+}

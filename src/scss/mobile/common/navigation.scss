@@ -1,15 +1,33 @@
 .navigation {
+  display: none;
   position: relative;
+  width: 0;
+  padding-top: rem(19);
+  background-color: rgba($white, 0.95);
+
+  &--opened {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: percentage(212px / $mobile-width);
+    height: 100%;
+    z-index: 100;
+  }
+
+  .logo__img {
+    margin: rem(-6) 0 0 rem(38);
+  }
 }
 
-.navigation__button {
-  position: absolute;
-  top: rem(-42);
-  left: rem(38);
+.navigation__toggle {
+  position: relative;
+  //top: rem(-42);
+  //left: rem(38);
   width: rem(30);
   height: rem(3);
   border: none;
   background-color: $black;
+
   &::before,
   &::after {
     content: "";
@@ -19,10 +37,48 @@
     height: rem(3);
     background-color: currentColor;
   }
+
   &::before {
     top: rem(-9);
   }
+
   &::after {
     top: rem(9);
   }
+}
+
+.navigation__list {
+  @include unstyle-list;
+  padding-top: rem(38);
+}
+
+.navigation__item {
+  margin-bottom: rem(42);
+  padding-left: rem(38);
+
+  &--active {
+    background-color: $white;
+  }
+}
+
+.navigation__link {
+  font-size: rem(12);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  @include unstyle-list;
+  padding-top: rem(28);
+}
+
+.dropdown__item {
+  margin-bottom: rem(26);
+}
+
+.dropdown__link {
+  font-size: rem(12);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $muddy-waters
 }

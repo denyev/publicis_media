@@ -1,0 +1,35 @@
+.intro {
+  padding: rem(10) rem(40) 0 rem(40);
+}
+
+.intro__media {
+  width: 100%;
+  margin-bottom: rem(44);
+}
+
+.intro__img {
+  display: block;
+  width: 100%;
+  max-width: rem(184);
+  height: auto;
+  margin: 0 auto;
+}
+
+.intro__content {
+  font-size: rem(14);
+  line-height: rem(21);
+
+  p {
+    margin-bottom: rem(20);
+  }
+
+  ul {
+    margin-bottom: rem(22);
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  li {
+    font-weight: bold;
+  }
+}

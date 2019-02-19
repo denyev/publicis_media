@@ -1,6 +1,6 @@
 .clients {
   background-color: $color-gallery;
-  text-align: center;
+  padding-bottom: rem(58);
 }
 
 .clients__list {
@@ -9,7 +9,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: rem(42);
-  margin-bottom: rem(26);
+  margin-bottom: rem(20);
   padding: 0 rem(23);
 }
 
@@ -43,12 +43,12 @@
 }
 
 .clients__more {
-  display: inline-block;
-  margin: 0 auto rem(58) auto;
+  display: block;
+  margin: 0 auto;
   padding: rem(12) rem(60);
   background-color: unset;
   border: 1px solid $black;
-  line-height: rem(26);
+  line-height: rem(21);
   font-size: rem(16);
   text-transform: uppercase;
 }

@@ -1,12 +1,12 @@
 .title {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   margin-top: 0;
-  padding: rem(25) rem(43);
+  padding: rem(26) rem(40);
+  font-weight: $font-weight-normal;
   font-size: rem(16);
-  text-transform: uppercase;
   line-height: normal;
-  font-weight: normal;
+  text-transform: uppercase;
   color: $white;
   background-color: $silver;
   z-index: 10;
@@ -17,11 +17,12 @@
     left: 0;
     bottom: 0;
     display: block;
-    width: 100%;
+    width: 150%;
     height: 100%;
+    max-width: rem(228);
     background-color: $silver;
     transform: skewY(-3deg);
-    transform-origin: 100% -100%;
+    transform-origin: 100% 0;
     z-index: -1;
   }
 }

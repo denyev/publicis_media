@@ -2,14 +2,14 @@ section.agencies
     h2.title
      | Наши агентства
     ul.agencies__list
-        li.agencies__item.agencies__item--starcom
-            +svg("starcom", 130, 109)
-        li.agencies__item.agencies__item--spark
-            +svg("spark", 130, 30)
-        li.agencies__item.agencies__item--zenith
-            +svg("zenith", 130, 84)
-        li.agencies__item.agencies__item--performics
-            +svg("performics", 130, 23)
+        li.agencies__item
+            +svg("starcom", 130, 109)(class="agencies__img agencies__img--starcom")
+        li.agencies__item
+            +svg("spark", 130, 30)(class="agencies__img agencies__img--spark")
+        li.agencies__item
+            +svg("zenith", 130, 84)(class="agencies__img agencies__img--zenith")
+        li.agencies__item
+            +svg("performics", 130, 23)(class="agencies__img agencies__img--performics")
     div.agencies__pager
         div.agencies__pager-item
     div.agencies__controls

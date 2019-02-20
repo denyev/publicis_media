@@ -1,43 +1,55 @@
 .clients {
-  background-color: $color-gallery;
   padding-bottom: rem(58);
+  background-color: $color-gallery;
 }
 
 .clients__list {
-  @include unstyle-list;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: rem(42);
-  margin-bottom: rem(20);
-  padding: 0 rem(23);
+  @include unstyle-list;
+  margin-top: rem(22);
+  margin-bottom: rem(38);
+  padding: 0 0 0 rem(22);
 }
 
 .clients__item {
+  position: relative;
   display: block;
   width: rem(137);
   height: rem(137);
-  background-image: url("../images/sprite.png");
-  background-repeat: no-repeat;
-  background-position-x: rem(-5);
-  background-size: cover;
 
-  &--philip-morris {
-    background-position-y: rem(-275);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/sprite.png");
+    background-position-x: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
-  &--mcdonalds {
-    background-position-y: rem(-145);
+  &--philip-morris::before {
+    background-position-y: rem(-260);
   }
 
-  &--procter-and-gamble {
-    background-position-y: rem(-415);
+  &--mcdonalds::before {
+    background-position-y: rem(-124);
   }
 
-  &--wbd {
-    background-position-y: rem(-555);
+  &--procter-and-gamble::before {
+    background-position-y: rem(-396);
   }
-  &--baltika {
+
+  &--wbd::before {
+    background-position-y: rem(-532);
+  }
+
+  &--baltika::before {
     background-position-y: rem(0);
   }
 }
@@ -45,11 +57,10 @@
 .clients__more {
   display: block;
   margin: 0 auto;
-  padding: rem(12) rem(60);
-  background-color: unset;
   border: 1px solid $black;
-  line-height: rem(21);
+  padding: rem(12) rem(60);
   font-size: rem(16);
+  line-height: rem(21);
   text-transform: uppercase;
+  background-color: unset;
 }
-

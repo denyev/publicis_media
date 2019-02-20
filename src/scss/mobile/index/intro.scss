@@ -1,18 +1,18 @@
 .intro {
-  padding: rem(10) rem(40) 0 rem(40);
+  padding: rem(26) rem(37) 0 rem(40);
 }
 
 .intro__media {
-  width: 100%;
   margin-bottom: rem(44);
+  width: 100%;
 }
 
 .intro__img {
   display: block;
-  width: 100%;
-  max-width: rem(184);
-  height: auto;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-width: rem(184);
 }
 
 .intro__content {
@@ -24,12 +24,19 @@
   }
 
   ul {
+    list-style-position: inside;
     margin-bottom: rem(22);
     padding-left: 0;
-    list-style-position: inside;
   }
 
   li {
-    font-weight: bold;
+    list-style-type: none;
+    font-weight: $font-weight-bold;
+
+    &::before {
+      content: "\02022";
+      display: inline-block;
+      padding-right: rem(5);
+    }
   }
 }

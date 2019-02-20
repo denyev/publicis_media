@@ -2,6 +2,4 @@ mixin svg(name, width, height)
 	svg&attributes(attributes)
 		use(
 			xlink:href=`${baseDir}images/sprites.svg#${name}`
-			width=(`${width}` !== undefined) ? `${width}` : null
-			height=(`${height}` !== undefined) ? `${height}` : null
 		)

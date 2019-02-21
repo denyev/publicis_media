@@ -9,3 +9,12 @@ html {
 	font-family: $font-family-primary;
     color: $black;
 }
+
+a:focus,
+a:active,
+button:focus,
+button:active,
+input:focus,
+input:active {
+	outline-color: rgba($muddy-waters, 0.7);
+}

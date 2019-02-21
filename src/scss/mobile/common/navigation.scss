@@ -19,34 +19,6 @@
   }
 }
 
-.navigation__toggle {
-  position: relative;
-  //top: rem(-42);
-  //left: rem(38);
-  width: rem(30);
-  height: rem(3);
-  border: none;
-  background-color: $black;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: rem(30);
-    height: rem(3);
-    background-color: currentColor;
-  }
-
-  &::before {
-    top: rem(-9);
-  }
-
-  &::after {
-    top: rem(9);
-  }
-}
-
 .navigation__list {
   @include unstyle-list;
   padding-top: rem(38);

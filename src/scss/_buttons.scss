@@ -1,0 +1,47 @@
+.toggler {
+  position: absolute;
+  left: rem(29);
+  top: rem(27);
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: rem(48);
+  height: rem(48);
+  background-color: transparent;
+}
+
+.toggler__wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.toggler__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  border: 0;
+  width: rem(30);
+  height: rem(3);
+  background-color: $black;
+  transform: translateX(-50%);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: rem(30);
+    height: rem(3);
+    background-color: currentColor;
+  }
+
+  &::before {
+    top: rem(-9);
+  }
+
+  &::after {
+    top: rem(9);
+  }
+}

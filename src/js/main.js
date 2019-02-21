@@ -1,7 +1,7 @@
 // Nav menu
 
 var navMain = document.querySelector('.navigation');
-var navToggle = document.querySelector('.navigation__toggle');
+var navToggle = document.querySelector('.toggler');
 
 navToggle.addEventListener('click', function() {
     if (navMain.classList.contains('navigation--closed')) {

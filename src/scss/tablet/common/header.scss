@@ -1,0 +1,15 @@
+@media (min-width: rem(768)) {
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    width: auto;
+    margin-right: rem(33);
+  }
+
+  .logo__img {
+    margin-left: rem(72);
+  }
+}

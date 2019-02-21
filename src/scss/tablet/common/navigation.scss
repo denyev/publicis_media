@@ -4,6 +4,7 @@
     display: block;
     width: auto;
     padding-top: 0;
+    background-color: $white;
 
     .logo {
       @include visually-hidden;

@@ -1,0 +1,38 @@
+@media (min-width: $tablet-width) {
+  .intro {
+    padding-top: rem(31);
+    padding-right: rem(72);
+    padding-left: rem(72);
+    margin-bottom: rem(63);
+  }
+
+  .intro__media {
+    margin-bottom: rem(38);
+  }
+
+  .intro__img {
+    max-width: rem(242);
+  }
+
+  .intro__content {
+    font-size: rem(16);
+    line-height: rem(26);
+
+    p {
+      margin-top: rem(26);
+      margin-bottom: rem(26);
+    }
+
+    ul {
+      margin-top: rem(27);
+      margin-bottom: rem(27);
+    }
+
+    li {
+
+      &::before {
+        padding-right: rem(8);
+      }
+    }
+  }
+}

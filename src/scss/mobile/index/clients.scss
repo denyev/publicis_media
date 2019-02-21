@@ -8,9 +8,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   @include unstyle-list;
-  margin-top: rem(22);
-  margin-bottom: rem(38);
-  padding: 0 0 0 rem(22);
+  margin: rem(22) auto rem(38) auto;
+  padding: 0;
+  max-width: rem(274);
 }
 
 .clients__item {

@@ -1,15 +1,34 @@
 // Nav menu
 
+var body = document.querySelector('body');
 var navMain = document.querySelector('.navigation');
 var navToggle = document.querySelector('.toggler');
 
-navToggle.addEventListener('click', function() {
+// Open/close menu use button
+
+navToggle.addEventListener('click', function(event) {
     if (navMain.classList.contains('navigation--closed')) {
         navMain.classList.remove('navigation--closed');
         navMain.classList.add('navigation--opened');
+        body.classList.add('page--overlay');
     } else {
         navMain.classList.add('navigation--closed');
         navMain.classList.remove('navigation--opened');
+        body.classList.remove('page--overlay');
+    }
+});
+
+// Close menu use overlay
+
+document.addEventListener('click', function(event) {
+    if (body.classList.contains('page--overlay')) {
+        var overlay = document.querySelector('.page--overlay');
+
+        if (event.target == overlay) {
+            navMain.classList.add('navigation--closed');
+            navMain.classList.remove('navigation--opened');
+            body.classList.remove('page--overlay');
+        }
     }
 });
 
@@ -71,17 +90,5 @@ var toggleSlider = function() {
 toggleSlider();
 
 window.addEventListener('resize', function() {
-    // if (mobileScreenWidth.matches) {
-    //     showItems('.clients__list', '.clients__item');
-    //     console.log("Screen width is at least 320px");
-    // } else {
-    //     hideItems(
-    //         '.clients__list',
-    //         '.clients__item',
-    //         '.clients__more',
-    //         6
-    //     );
-    //     console.log("Screen less than 320px");
-    // }
     toggleSlider();
 });

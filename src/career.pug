@@ -1,0 +1,9 @@
+extends pug/base
+
+append vars
+    - html.classList.push('page-career')
+    - page = 'career'
+
+block content
+    include pug/common/header
+    include pug/common/footer

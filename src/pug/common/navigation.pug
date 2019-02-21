@@ -1,52 +1,60 @@
-nav.navigation
+nav.navigation.navigation--closed
     include logo
     ul.navigation__list
-        li.navigation__item
+        li.navigation__item(
+            class={'navigation__item--active': page === 'index'}
+        )
             a.navigation__link(
-                class={'navigation__item--active': page === 'index'}
                 href="index.html"
             )
                 | Главная
-        li.navigation__item
+        li.navigation__item(
+            class={'navigation__item--active': page === ''}
+        )
             a.navigation__link(
-                class={'navigation__item--active': page === ''}
                 href="#"
             )
                 | О компании
-        li.navigation__item
+        li.navigation__item(
+                class={'navigation__item--active': page === ''}
+        )
             a.navigation__link(
-            class={'navigation__item--active': page === ''}
-            href="#"
+                href="#"
             )
                 | Новости
-        li.navigation__item
+        li.navigation__item(
+                class={'navigation__item--active': page === 'career'}
+        )
             a.navigation__link(
-            class={'navigation__item--active': page === ''}
-            href="#"
+                href="career.html"
             )
                 | Карьера
             ul.dropdown
-                li.dropdown__item
+                li.dropdown__item(
+                    class={'navigation__item--active': page === ''}
+                )
                     a.dropdown__link(
-                        class={'navigation__item--active': page === ''}
                         href="#"
                     )
                         | Вакансии
-                li.dropdown__item
-                    a.dropdown__link(
+                li.dropdown__item(
                     class={'navigation__item--active': page === ''}
-                    href="#"
+                )
+                    a.dropdown__link(
+                        href="#"
                     )
                         | Преимущества
-                li.dropdown__item
-                    a.dropdown__link(
+                li.dropdown__item(
                     class={'navigation__item--active': page === ''}
-                    href="#"
+                )
+                    a.dropdown__link(
+                        href="#"
                     )
                         | Студентам
-        li.navigation__item
-            a.navigation__link(
+        li.navigation__item(
             class={'navigation__item--active': page === ''}
-            href="#"
+        )
+            a.navigation__link(
+                href="#"
             )
                 | Контакты

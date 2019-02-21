@@ -5,7 +5,7 @@
   display: none;
   padding-top: rem(26);
   width: 0;
-  background-color: rgba($white, 0.95);
+  background-color: $wild-sand;
 
   &--opened {
     position: fixed;

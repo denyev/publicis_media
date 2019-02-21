@@ -1,0 +1,33 @@
+@media (min-width: rem($tablet-width)) {
+  .hero {
+    padding: 0;
+    min-height: rem(700);
+    background-image:
+            linear-gradient(-42deg, rgba(186, 151, 101, 0.4) 37.5%, transparent 30%),
+            url("../images/hero/hero-tablet.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $muddy-waters;
+  }
+
+  .hero__wrap {
+    margin: rem(149) auto auto auto;
+    width: 100%;
+    max-width: rem(698);
+  }
+
+  .hero__title {
+    margin-bottom: rem(23);
+    font-size: rem(50);
+    line-height: rem(82);
+  }
+
+  .hero__list {
+    font-size: rem(22);
+  }
+
+  .hero__item {
+    line-height: rem(42);
+  }
+}

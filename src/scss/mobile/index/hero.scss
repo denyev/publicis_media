@@ -1,14 +1,38 @@
 .hero {
   position: relative;
-  padding: rem(79) rem(30) rem(89) rem(39);
-  min-height: rem(450);
-  background-color: $muddy-waters;
+  display: flex;
+  //padding: rem(79) rem(30) rem(89) rem(39);
+  min-height: rem(490);
   background-image:
-          linear-gradient(-45deg, rgba($muddy-waters, 0.4) 50%, transparent 50%),
+          linear-gradient(-42deg, rgba($muddy-waters, 0.4) 48%, transparent 48%),
           url("../images/hero/hero-mobile.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: $muddy-waters;
+}
+
+.hero__wrap {
+  position: relative;
+  margin: rem(64) auto auto auto;
+  padding: rem(15) rem(38);
+  width: 100%;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(at center, rgba($mine-shaft, 0.4), rgba($mine-shaft, 0.4));
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(15px);
+    z-index: -1;
+  }
 }
 
 .hero__title {
@@ -28,5 +52,5 @@
 }
 
 .hero__item {
-  line-height: rem(30);
+  line-height: rem(31);
 }

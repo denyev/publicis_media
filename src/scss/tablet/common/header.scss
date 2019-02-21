@@ -1,4 +1,4 @@
-@media (min-width: rem(768)) {
+@media (min-width: rem($tablet-width)) {
   .header {
     display: flex;
     flex-direction: row;

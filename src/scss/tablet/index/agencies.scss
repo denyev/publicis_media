@@ -1,0 +1,89 @@
+@media (min-width: $tablet-width) {
+  .agencies {
+    position: relative;
+  }
+
+  .agencies__list {
+    display: block;
+    margin: rem(153) auto rem(192) auto;
+    max-width: 81.2%;
+  }
+
+  .agencies__item {
+    margin: auto;
+  }
+
+  .agencies__img {
+    width: auto;
+
+    &--spark {
+      transform: none;
+    }
+
+    &--performics {
+      transform: none;
+    }
+  }
+
+  .agencies__controls {
+    display: block;
+  }
+
+  .agencies__arrow {
+    position: absolute;
+    top: 50%;
+    border: 1px solid $white;
+    width: rem(20);
+    height: rem(20);
+    background-color: unset;
+
+    &--left:active,
+    &--left:focus,
+    &--right:active,
+    &--right:focus {
+      outline: none;
+    }
+
+    &--left {
+      left: 0;
+      border-top-width: 0;
+      border-right-width: 0;
+      transform: rotate(45deg) translate(0, -50%);
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        left: -95%;
+        top: -60%;
+        display: block;
+        border-radius: 50%;
+        width: 250%;
+        height: 250%;
+        background-color: rgba($white, 0.05);
+      }
+    }
+
+    &--right {
+      right: 0;
+      border-bottom-width: 0;
+      border-left-width: 0;
+      transform: rotate(45deg) translate(0, -50%);
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        left: -55%;
+        top: -90%;
+        display: block;
+        border-radius: 50%;
+        width: 250%;
+        height: 250%;
+        background-color: rgba($white, 0.05);
+      }
+    }
+
+    span {
+      display: none;
+    }
+  }
+}

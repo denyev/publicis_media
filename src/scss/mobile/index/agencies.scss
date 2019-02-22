@@ -39,5 +39,5 @@
 
 .agencies__pager,
 .agencies__controls {
-  @include visually-hidden;
+  display: none;
 }

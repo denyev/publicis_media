@@ -26,3 +26,18 @@
     z-index: -1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    margin-left: rem(72);
+    padding-top: rem(36);
+    padding-right: rem(83);
+    padding-bottom: rem(36);
+    padding-left: rem(31);
+    font-size: rem(22);
+
+    &::before {
+      max-width: rem(310);
+    }
+  }
+}

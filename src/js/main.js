@@ -92,3 +92,32 @@ toggleSlider();
 window.addEventListener('resize', function() {
     toggleSlider();
 });
+
+// Slider
+
+var tabletScreenWidth = window.matchMedia('(min-width: 768px)');
+
+function agenciesSlider() {
+    if (tabletScreenWidth.matches) {
+        $('.agencies__list').owlCarousel({
+            items: 3,
+            loop:true,
+            nav:true,
+            navContainerClass: 'agencies__controls',
+            navClass: [
+                'agencies__arrow agencies__arrow--left',
+                'agencies__arrow agencies__arrow--right'
+            ],
+        });
+    }else{
+        $('.owl-carousel').owlCarousel('destroy');
+    }
+}
+
+$(document).ready(function(e) {
+    agenciesSlider();
+});
+
+$(window).resize(function() {
+    agenciesSlider();
+});

@@ -1,5 +1,4 @@
 .title {
-  position: relative;
   display: inline-block;
   margin-top: 0;
   padding: rem(26) rem(40);
@@ -8,36 +7,39 @@
   line-height: normal;
   text-transform: uppercase;
   color: $white;
-  background-color: $silver;
-  z-index: 10;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 150%;
-    height: 100%;
-    max-width: rem(228);
+  &--angled {
+    position: relative;
+    z-index: 10;
     background-color: $silver;
-    transform: skewY(-3deg);
-    transform-origin: 100% 0;
-    z-index: -1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 150%;
+      height: 100%;
+      max-width: rem(228);
+      background-color: $silver;
+      transform: skewY(-3deg);
+      transform-origin: 100% 0;
+      z-index: -1;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .title {
     margin-left: rem(72);
-    padding-top: rem(36);
-    padding-right: rem(83);
-    padding-bottom: rem(36);
-    padding-left: rem(31);
+    padding: rem(36) rem(83) rem(36) rem(31);
     font-size: rem(22);
 
-    &::before {
-      max-width: rem(310);
+    &--angled {
+      &::before {
+        max-width: rem(310);
+      }
     }
   }
 }

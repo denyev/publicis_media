@@ -1,16 +1,23 @@
 @media (min-width: $tablet-width) {
   .agencies {
     position: relative;
+    background-image: linear-gradient(rgba($black, 0.7), rgba($black, 0.7)), url("../images/agencies/agencies-phablet.jpg");
   }
 
   .agencies__list {
     display: block;
-    margin: rem(153) auto rem(192) auto;
+    margin: rem(141) auto rem(94) auto;
     max-width: 81.2%;
   }
 
   .agencies__item {
+    justify-content: flex-start;
     margin: auto;
+    min-height: rem(220);
+
+    &--center {
+      justify-content: center;
+    }
   }
 
   .agencies__img {

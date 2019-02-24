@@ -6,12 +6,13 @@
 
   .agencies__list {
     display: block;
-    margin: rem(141) auto rem(94) auto;
+    margin: rem(141) auto rem(62) auto;
     max-width: 81.2%;
   }
 
   .agencies__item {
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     min-height: rem(220);
 
@@ -23,26 +24,50 @@
   .agencies__img {
     width: auto;
 
+    &--starcom {
+      max-width: 118px;
+      max-height: 99px;
+      transform: translate(14px, -53px);
+    }
+
     &--spark {
-      transform: none;
+      width: 136px;
+      height: 32px;
+      transform: translate(-1px, -11px);
+    }
+
+    &--zenith {
+      width: 125px;
+      height: 81px;
+      transform: translate(-18px, -25px);
     }
 
     &--performics {
-      transform: none;
+      transform: translate(0, -14px);
     }
   }
 
   .agencies__controls {
     display: block;
+    margin-bottom: rem(41);
   }
 
   .agencies__arrow {
     position: absolute;
-    top: 50%;
-    border: 1px solid $white;
-    width: rem(20);
-    height: rem(20);
+    top: 27%;
+    border: 0;
+    border-radius: 50%;
+    width: rem(40);
+    height: rem(40);
     background-color: unset;
+
+    &::after {
+      content: "";
+      display: block;
+      border: 1px solid $white;
+      width: rem(20);
+      height: rem(20);
+    }
 
     &--left:active,
     &--left:focus,
@@ -53,44 +78,77 @@
 
     &--left {
       left: 0;
-      border-top-width: 0;
-      border-right-width: 0;
-      transform: rotate(45deg) translate(0, -50%);
 
-      &:hover::after {
+      &::after {
+        border-top-width: 0;
+        border-right-width: 0;
+        transform: rotate(45deg);
+        transform-origin: 45% 45%;
+      }
+
+      &:hover::before {
         content: "";
         position: absolute;
-        left: -95%;
-        top: -60%;
+        left: -39%;
+        top: -16%;
         display: block;
         border-radius: 50%;
-        width: 250%;
-        height: 250%;
+        width: rem(54);
+        height: rem(54);
         background-color: rgba($white, 0.05);
       }
     }
 
     &--right {
       right: 0;
-      border-bottom-width: 0;
-      border-left-width: 0;
-      transform: rotate(45deg) translate(0, -50%);
 
-      &:hover::after {
+      &::after {
+        border-bottom-width: 0;
+        border-left-width: 0;
+        transform: rotate(45deg);
+        transform-origin: 73% 110%;
+      }
+
+      &:hover::before {
         content: "";
         position: absolute;
-        left: -55%;
-        top: -90%;
+        left: 5%;
+        top: -16%;
         display: block;
         border-radius: 50%;
-        width: 250%;
-        height: 250%;
+        width: rem(54);
+        height: rem(54);
         background-color: rgba($white, 0.05);
       }
     }
 
     span {
       display: none;
+    }
+  }
+
+  .agencies__pager {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .agencies__pager-item {
+    border-width: 0;
+    border-radius: 50%;
+    margin: 0 rem(20) 0 0;
+    padding: 0;
+    width: rem(13);
+    height: rem(13);
+    background-color: $white;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &.active,
+    &--active {
+      background-color: $muddy-waters;
     }
   }
 }

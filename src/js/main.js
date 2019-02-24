@@ -108,6 +108,8 @@ function agenciesSlider() {
                 'agencies__arrow agencies__arrow--left',
                 'agencies__arrow agencies__arrow--right'
             ],
+            dotsClass: 'agencies__pager',
+            dotClass: 'agencies__pager-item',
         });
     }else{
         $('.owl-carousel').owlCarousel('destroy');

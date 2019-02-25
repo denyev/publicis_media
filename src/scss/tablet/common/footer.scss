@@ -1,0 +1,14 @@
+@media (min-width: rem($tablet-width)) {
+  .footer__img {
+    min-height: rem(392);
+    transform: translate(0, 22px) scale(1.32);
+  }
+
+  .footer__content {
+    padding-left: rem(94);
+
+    &::before {
+      height: rem(37);
+    }
+  }
+}

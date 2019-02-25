@@ -1,3 +1,30 @@
 @media (min-width: $tablet-width) {
-  //
+  .achievements__list {
+    margin-top: rem(128);
+    max-width: rem(836);
+  }
+
+  .achievements__item {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: rem(101);
+    padding-right: rem(36);
+    padding-left: 0;
+
+    &:nth-of-type(2n) {
+      padding-left: rem(54);
+    }
+
+    &--chart {
+      padding-right: rem(15);
+    }
+  }
+
+  .achievements__img {
+    margin-top: rem(10);
+  }
+
+  .achievements__caption {
+    margin-top: 0;
+  }
 }

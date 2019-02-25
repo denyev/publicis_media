@@ -1,0 +1,14 @@
+@media (min-width: rem($laptop-width)) {
+  .footer__img {
+    min-height: rem(618);
+    transform: translate(29px, 38px) scale(1.42);
+  }
+
+  .footer__content {
+    padding-left: rem(122);
+
+    &::before {
+      height: rem(48);
+    }
+  }
+}

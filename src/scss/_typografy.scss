@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: rem($phablet-width)) {
   .title {
     margin-left: rem(72);
     padding: rem(36) rem(83) rem(36) rem(31);

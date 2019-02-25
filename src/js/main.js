@@ -1,6 +1,6 @@
 // Nav menu
 
-var body = document.querySelector('body');
+var html = document.querySelector('html');
 var navMain = document.querySelector('.navigation');
 var navToggle = document.querySelector('.toggler');
 
@@ -10,24 +10,24 @@ navToggle.addEventListener('click', function(event) {
     if (navMain.classList.contains('navigation--closed')) {
         navMain.classList.remove('navigation--closed');
         navMain.classList.add('navigation--opened');
-        body.classList.add('page--overlay');
+        html.classList.add('page--overlay');
     } else {
         navMain.classList.add('navigation--closed');
         navMain.classList.remove('navigation--opened');
-        body.classList.remove('page--overlay');
+        html.classList.remove('page--overlay');
     }
 });
 
 // Close menu use overlay
 
 document.addEventListener('click', function(event) {
-    if (body.classList.contains('page--overlay')) {
+    if (html.classList.contains('page--overlay')) {
         var overlay = document.querySelector('.page--overlay');
 
         if (event.target == overlay) {
             navMain.classList.add('navigation--closed');
             navMain.classList.remove('navigation--opened');
-            body.classList.remove('page--overlay');
+            html.classList.remove('page--overlay');
         }
     }
 });
@@ -93,16 +93,16 @@ window.addEventListener('resize', function() {
     toggleSlider();
 });
 
-// Slider
+// Slider for section agencies
 
-var tabletScreenWidth = window.matchMedia('(min-width: 768px)');
+var phabletScreenWidth = window.matchMedia('(min-width: 768px)');
 
 function agenciesSlider() {
-    if (tabletScreenWidth.matches) {
+    if (phabletScreenWidth.matches) {
         $('.agencies__list').owlCarousel({
             items: 3,
-            loop:true,
-            nav:true,
+            loop: true,
+            nav: true,
             navContainerClass: 'agencies__controls',
             navClass: [
                 'agencies__arrow agencies__arrow--left',
@@ -122,4 +122,33 @@ $(document).ready(function(e) {
 
 $(window).resize(function() {
     agenciesSlider();
+});
+
+// Slider for section clients
+
+function clientsSlider() {
+    if (phabletScreenWidth.matches) {
+        $('.clients__list').owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 18,
+            dotsClass: false,
+            nav: true,
+            navContainerClass: 'clients__controls',
+            navClass: [
+                'clients__arrow clients__arrow--left',
+                'clients__arrow clients__arrow--right'
+            ],
+        });
+    }else{
+        $('.owl-carousel').owlCarousel('destroy');
+    }
+}
+
+$(document).ready(function(e) {
+    clientsSlider();
+});
+
+$(window).resize(function() {
+    clientsSlider();
 });

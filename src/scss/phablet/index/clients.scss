@@ -1,3 +1,120 @@
 @media (min-width: rem($phablet-width)) {
-  
+  .clients__list {
+    margin-top: rem(149);
+    margin-bottom: rem(153);
+    max-width: rem(500);
+  }
+
+  .clients__item {
+    margin: auto;
+    width: rem(148);
+    height: rem(148);
+
+    &--philip-morris::before {
+      background-position-y: rem(-282);
+    }
+
+    &--mcdonalds::before {
+      background-position-y: rem(-134);
+    }
+
+    &--procter-and-gamble::before {
+      background-position-y: rem(-428);
+    }
+
+    &--wbd::before {
+      background-position-y: rem(-586);
+    }
+
+    &--baltika::before {
+      background-position-y: rem(0);
+    }
+  }
+
+  .clients__controls {
+    position: absolute;
+    left: rem(-64);
+    top: 36%;
+    display: block;
+    width: 125%;
+  }
+
+  .clients__arrow {
+    position: absolute;
+    top: 29%;
+    border: 0;
+    border-radius: 50%;
+    width: rem(40);
+    height: rem(40);
+    background-color: unset;
+
+    &::after {
+      content: "";
+      display: block;
+      border: 1px solid $black;
+      width: rem(20);
+      height: rem(20);
+    }
+
+    &--left:active,
+    &--left:focus,
+    &--right:active,
+    &--right:focus {
+      outline: none;
+    }
+
+    &--left {
+      left: 0;
+
+      &::after {
+        border-top-width: 0;
+        border-right-width: 0;
+        transform: rotate(45deg);
+        transform-origin: 45% 45%;
+      }
+
+      &:hover::before {
+        content: "";
+        position: absolute;
+        left: -39%;
+        top: -16%;
+        display: block;
+        border-radius: 50%;
+        width: rem(54);
+        height: rem(54);
+        background-color: rgba($white, 0.05);
+      }
+    }
+
+    &--right {
+      right: 0;
+
+      &::after {
+        border-bottom-width: 0;
+        border-left-width: 0;
+        transform: rotate(45deg);
+        transform-origin: 73% 110%;
+      }
+
+      &:hover::before {
+        content: "";
+        position: absolute;
+        left: 5%;
+        top: -16%;
+        display: block;
+        border-radius: 50%;
+        width: rem(54);
+        height: rem(54);
+        background-color: rgba($white, 0.05);
+      }
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .clients__more {
+    display: none;
+  }
 }

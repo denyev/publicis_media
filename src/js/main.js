@@ -1,3 +1,6 @@
+var mobileScreenWidth = window.matchMedia('(min-width: 320px)');
+var phabletScreenWidth = window.matchMedia('(min-width: 768px)');
+
 // Nav menu
 
 var html = document.querySelector('html');
@@ -34,8 +37,6 @@ document.addEventListener('click', function(event) {
 
 // Load more
 
-var mobileScreenWidth = window.matchMedia('(min-width: 320px)');
-
 var hideItems = function(parent, items, loadMoreBtn, maxItems) {
     var parent = document.querySelector(parent);
     var items = parent.querySelectorAll(items);
@@ -62,7 +63,7 @@ var hideItems = function(parent, items, loadMoreBtn, maxItems) {
     });
 };
 
-var showItems = function(parent, items, maxItems) {
+var showItems = function(parent, items) {
     var parent = document.querySelector(parent);
     var items = parent.querySelectorAll(items);
     var hiddenClass = "visually-hidden";
@@ -73,7 +74,7 @@ var showItems = function(parent, items, maxItems) {
 };
 
 var toggleSlider = function() {
-    if (mobileScreenWidth.matches) {
+    if (phabletScreenWidth.matches) {
         showItems('.clients__list', '.clients__item');
         console.log("Screen width is at least 320px");
     } else {
@@ -94,8 +95,6 @@ window.addEventListener('resize', function() {
 });
 
 // Slider for section agencies
-
-var phabletScreenWidth = window.matchMedia('(min-width: 768px)');
 
 function agenciesSlider() {
     if (phabletScreenWidth.matches) {

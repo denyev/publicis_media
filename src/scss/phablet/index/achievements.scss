@@ -1,7 +1,7 @@
 @media (min-width: rem($phablet-width)) {
   .achievements__list {
     flex-flow: row wrap;
-    margin: rem(53) auto rem(50) auto;
+    margin: rem(53) auto 0 auto;
     max-width: rem(624);
   }
 
@@ -16,6 +16,10 @@
 
     &:nth-of-type(2n) {
       padding-left: rem(74);
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
     }
   }
 

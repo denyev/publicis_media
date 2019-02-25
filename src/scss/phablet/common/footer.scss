@@ -1,0 +1,11 @@
+@media (min-width: rem($phablet-width)) {
+  .footer__img {
+    min-height: rem(396);
+    transform: translate(0px, rem(19)) scale(1.7);
+  }
+
+  .footer__content {
+    padding-left: rem(72);
+    font-size: rem(12);
+  }
+}

@@ -26,20 +26,20 @@
     width: auto;
 
     &--starcom {
-      max-width: 118px;
-      max-height: 99px;
+      width: rem(118);
+      height: rem(99);
       transform: translate(14px, -53px);
     }
 
     &--spark {
-      width: 136px;
-      height: 32px;
+      width: rem(136);
+      height: rem(32);
       transform: translate(-1px, -11px);
     }
 
     &--zenith {
-      width: 125px;
-      height: 81px;
+      width: rem(125);
+      height: rem(81);
       transform: translate(-18px, -25px);
     }
 

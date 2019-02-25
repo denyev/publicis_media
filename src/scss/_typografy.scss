@@ -43,3 +43,9 @@
     }
   }
 }
+
+@media (min-width: rem($tablet-width)) {
+  .title {
+    margin-left: rem(94);
+  }
+}

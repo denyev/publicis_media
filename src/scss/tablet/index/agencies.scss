@@ -1,0 +1,39 @@
+@media (min-width: rem($tablet-width)) {
+  .agencies__list {
+    margin-top: rem(122);
+  }
+
+  .agencies__item {
+    min-height: rem(240);
+  }
+
+  .agencies__img {
+    width: auto;
+
+    &--starcom {
+      width: rem(144);
+      height: rem(121);
+      transform: translate(11px, -58px);
+    }
+
+    &--spark {
+      width: rem(166);
+      height: rem(38);
+      transform: translate(-1px, -7px);
+    }
+
+    &--zenith {
+      width: rem(152);
+      height: rem(98);
+      transform: translate(-17px, -24px);
+    }
+
+    &--performics {
+      transform: translate(0, -14px);
+    }
+  }
+
+  .agencies__arrow {
+    top: 32%;
+  }
+}

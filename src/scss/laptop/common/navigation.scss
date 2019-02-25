@@ -1,0 +1,17 @@
+@media (min-width: $laptop-width) {
+  .navigation {
+    margin-right: rem(122);
+  }
+
+  .navigation__item {
+    padding-top: rem(29);
+    padding-left: rem(41);
+
+    &--active {
+
+      &::after {
+        top: 70%;
+      }
+    }
+  }
+}

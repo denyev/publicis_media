@@ -1,0 +1,12 @@
+@media (min-width: $laptop-width) {
+  .header {
+    margin-bottom: rem(7);
+  }
+
+  .logo__img {
+    margin-top: rem(6);
+    margin-left: rem(122);
+    width: rem(92);
+    height: rem(75);
+  }
+}

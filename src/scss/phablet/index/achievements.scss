@@ -1,0 +1,55 @@
+@media (min-width: rem($phablet-width)) {
+  .achievements__list {
+    flex-flow: row wrap;
+    margin: rem(53) auto rem(50) auto;
+    max-width: rem(624);
+  }
+
+  .achievements__item {
+    flex: 1 1 50%;
+    margin-bottom: rem(49);
+    padding-left: rem(30);
+
+    &:last-child {
+      margin-bottom: auto;
+    }
+
+    &:nth-of-type(2n) {
+      padding-left: rem(74);
+    }
+  }
+
+  .achievements__img {
+    margin-bottom: rem(20);
+
+    &--staff {
+      width: rem(151);
+      height: rem(100);
+    }
+
+    &--chart {
+      width: rem(132);
+      height: rem(100);
+    }
+
+    &--pie-chart {
+      width: rem(152);
+      height: rem(130);
+    }
+
+    &--earth {
+      width: rem(124);
+      height: rem(124);
+    }
+  }
+
+  .achievements__caption {
+    margin-bottom: rem(12);
+    font-size: rem(60);
+  }
+
+  .achievements__description {
+    padding-left: 0;
+    font-size: rem(22);
+  }
+}

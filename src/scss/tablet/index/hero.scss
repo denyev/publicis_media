@@ -1,7 +1,7 @@
 @media (min-width: $tablet-width) {
   .hero {
     background-image:
-            linear-gradient(-42deg, rgba(186, 151, 101, 0.4) 43%, transparent 30%),
+            linear-gradient(-42deg, rgba($muddy-waters, 0.4) 43%, transparent 30%),
             url(../images/hero/hero-tablet.jpg);
   }
 

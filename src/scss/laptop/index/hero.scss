@@ -1,0 +1,11 @@
+@media (min-width: $laptop-width) {
+  .hero {
+    background-image:
+            linear-gradient(-42deg, rgba($muddy-waters, 0.4) 48%, transparent 48%),
+            url(../images/hero/hero-laptop.jpg);
+  }
+
+  .hero__wrap {
+    margin-left: rem(88);
+  }
+}

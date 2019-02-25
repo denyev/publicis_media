@@ -10,24 +10,34 @@
     width: rem(148);
     height: rem(148);
 
-    &--philip-morris::before {
-      background-position-y: rem(-282);
+    &--philip-morris {
+      &::before {
+        background-position-y: rem(-282);
+      }
     }
 
-    &--mcdonalds::before {
-      background-position-y: rem(-134);
+    &--mcdonalds {
+      &::before {
+        background-position-y: rem(-134);
+      }
     }
 
-    &--procter-and-gamble::before {
-      background-position-y: rem(-428);
+    &--procter-and-gamble {
+      &::before {
+        background-position-y: rem(-428);
+      }
     }
 
-    &--wbd::before {
-      background-position-y: rem(-586);
+    &--wbd {
+      &::before {
+        background-position-y: rem(-586);
+      }
     }
 
-    &--baltika::before {
-      background-position-y: rem(0);
+    &--baltika {
+      &::before {
+        background-position-y: rem(0);
+      }
     }
   }
 

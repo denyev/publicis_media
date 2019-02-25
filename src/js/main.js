@@ -138,6 +138,12 @@ function clientsSlider() {
                 'clients__arrow clients__arrow--left',
                 'clients__arrow clients__arrow--right'
             ],
+            responsive: {
+                768: {
+                    items: 4,
+                    margin: 35,
+                }
+            },
         });
     }else{
         $('.owl-carousel').owlCarousel('destroy');

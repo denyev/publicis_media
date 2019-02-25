@@ -1,0 +1,51 @@
+@media (min-width: rem($tablet-width)) {
+  .clients {
+    padding-bottom: rem(44);
+  }
+
+  .clients__list {
+    max-width: rem(785);
+  }
+
+  .clients__item {
+    margin: auto;
+    width: rem(161);
+    height: rem(161);
+
+    &--philip-morris {
+      &::before {
+        background-position-y: rem(-314);
+      }
+    }
+
+    &--mcdonalds {
+      &::before {
+        background-position-y: rem(-154);
+      }
+    }
+
+    &--procter-and-gamble {
+      &::before {
+        background-position-y: rem(-474);
+      }
+    }
+
+    &--wbd {
+      &::before {
+        background-position-y: rem(-634);
+      }
+    }
+
+    &--baltika {
+      &::before {
+        background-position-y: rem(0);
+      }
+    }
+  }
+
+  .clients__controls {
+    left: rem(-27);
+    top: 33%;
+    width: 106.7%;
+  }
+}

@@ -1,0 +1,19 @@
+@media (min-width: rem($tablet-width)) {
+  .intro {
+    display: flex;
+    margin-bottom: rem(132);
+    padding-top: rem(72);
+    padding-right: rem(94);
+    padding-left: rem(94);
+  }
+
+  .intro__media {
+    margin-right: rem(80);
+  }
+
+  .intro__img {
+    margin-top: rem(144);
+    width: rem(242);
+    height: rem(200);
+  }
+}

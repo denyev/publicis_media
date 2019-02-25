@@ -1,0 +1,14 @@
+@media (min-width: rem($laptop-width)) {
+  .achievements__list {
+    max-width: rem(1063);
+  }
+
+  .achievements__item {
+    margin-bottom: rem(71);
+    padding-right: rem(91);
+
+    &:nth-of-type(2n) {
+      padding-left: rem(94);
+    }
+  }
+}

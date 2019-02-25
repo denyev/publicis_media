@@ -1,4 +1,4 @@
-@media (min-width: $laptop-width) {
+@media (min-width: rem($laptop-width)) {
   .hero {
     background-image:
             linear-gradient(-42deg, rgba($muddy-waters, 0.4) 48%, transparent 48%),

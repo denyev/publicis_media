@@ -2,7 +2,9 @@
   .agencies {
     position: relative;
     padding-bottom: rem(29);
-    background-image: linear-gradient(rgba($black, 0.7), rgba($black, 0.7)), url("../images/agencies/agencies-phablet.jpg");
+    background-image:
+            linear-gradient(rgba($black, 0.7), rgba($black, 0.7)),
+            url("../images/agencies/agencies-phablet.jpg");
   }
 
   .agencies__list {
@@ -44,6 +46,8 @@
     }
 
     &--performics {
+      width: rem(151);
+      height: rem(27);
       transform: translate(0, -14px);
     }
   }

@@ -49,3 +49,9 @@
     margin-left: rem(94);
   }
 }
+
+@media (min-width: rem($laptop-width)) {
+  .title {
+    margin-left: rem(122);
+  }
+}

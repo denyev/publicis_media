@@ -1,25 +1,16 @@
-@media (min-width: rem($tablet-width)) {
+@media (min-width: rem($laptop-width)) {
   .agencies {
     background-image:
             linear-gradient(rgba($black, 0.7), rgba($black, 0.7)),
-            url("../images/agencies/agencies-tablet.jpg");
-  }
-
-  .agencies__list {
-    margin-top: rem(122);
-  }
-
-  .agencies__item {
-    min-height: rem(240);
+            url("../images/agencies/agencies-laptop.jpg");
   }
 
   .agencies__img {
-    width: auto;
 
     &--starcom {
       width: rem(144);
       height: rem(121);
-      transform: translate(11px, -58px);
+      transform: translate(4px, -61px);
     }
 
     &--spark {
@@ -31,15 +22,11 @@
     &--zenith {
       width: rem(152);
       height: rem(98);
-      transform: translate(-17px, -24px);
+      transform: translate(-5px, -24px);
     }
 
     &--performics {
-      transform: translate(0, -14px);
+      transform: translate(-15, -14px);
     }
-  }
-
-  .agencies__arrow {
-    top: 32%;
   }
 }

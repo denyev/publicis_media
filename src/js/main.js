@@ -109,6 +109,12 @@ function agenciesSlider() {
             ],
             dotsClass: 'agencies__pager',
             dotClass: 'agencies__pager-item',
+            responsive: {
+                1366: {
+                    items: 4,
+                    // margin: 35,
+                }
+            },
         });
     }else{
         $('.owl-carousel').owlCarousel('destroy');

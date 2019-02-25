@@ -112,7 +112,6 @@ function agenciesSlider() {
             responsive: {
                 1366: {
                     items: 4,
-                    // margin: 35,
                 }
             },
         });
@@ -148,7 +147,11 @@ function clientsSlider() {
                 768: {
                     items: 4,
                     margin: 35,
-                }
+                },
+                1366: {
+                    items: 5,
+                    margin: 21,
+                },
             },
         });
     }else{

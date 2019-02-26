@@ -152,6 +152,10 @@ function clientsSlider() {
                     items: 5,
                     margin: 21,
                 },
+                1920: {
+                    margin: 101,
+                    autoWidth: true,
+                },
             },
         });
     }else{

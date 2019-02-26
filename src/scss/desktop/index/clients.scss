@@ -1,0 +1,10 @@
+@media (min-width: rem($laptop-width)) {
+  .clients__list {
+    max-width: rem(1329);
+  }
+
+  .clients__controls {
+    left: rem(-100);
+    width: 114.9%;
+  }
+}

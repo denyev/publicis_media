@@ -1,0 +1,11 @@
+@media (min-width: rem($desktop-width)) {
+  .hero {
+    background-image:
+            linear-gradient(-42deg, rgba($muddy-waters, 0.4) 48%, transparent 48%),
+            url(../images/hero/hero-desktop.jpg);
+  }
+
+  .hero__wrap {
+    margin-left: rem(288);
+  }
+}

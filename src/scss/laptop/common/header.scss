@@ -1,4 +1,4 @@
-@media (min-width: $laptop-width) {
+@media (min-width: rem($laptop-width)) {
   .header {
     margin-bottom: rem(7);
   }

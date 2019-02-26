@@ -1,0 +1,13 @@
+@media (min-width: rem($desktop-width)) {
+  .header {
+    margin-bottom: rem(7);
+    padding-right: rem(324);
+    padding-left: rem(324);
+  }
+
+  .logo__img {
+    margin-left: 0;
+    width: rem(92);
+    height: rem(75);
+  }
+}

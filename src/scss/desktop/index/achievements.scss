@@ -1,0 +1,52 @@
+@media (min-width: rem($desktop-width)) {
+  .achievements__list {
+    max-width: none;
+    margin-left: rem(353);
+  }
+
+  .achievements__item {
+    margin-bottom: rem(71);
+    padding-right: 0;
+
+    &:nth-of-type(2n) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .achievements__img {
+    margin-bottom: rem(20);
+
+    &--staff {
+      width: rem(151);
+      height: rem(100);
+    }
+
+    &--chart {
+      width: rem(132);
+      height: rem(100);
+    }
+
+    &--pie-chart {
+      width: rem(152);
+      height: rem(130);
+    }
+
+    &--earth {
+      width: rem(124);
+      height: rem(124);
+    }
+  }
+
+  .achievements__content {
+    margin-right: auto;
+    margin-left: rem(133);
+    width: 100%;
+    text-align: left;
+  }
+
+  .achievements__caption,
+  .achievements__description {
+    transform: translate(0, -9px);
+  }
+}

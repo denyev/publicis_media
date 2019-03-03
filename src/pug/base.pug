@@ -52,6 +52,7 @@ block vars
 			ogTitle: title,
 			ogType: 'website',
 			ogUrl: null,
+			msapplicationConfig: null,
 			themeColor: null,
 			twitterCard: 'summary_large_image',
 			twitterSite: null,
@@ -179,6 +180,8 @@ html(class=html.classList)&attributes(html.attrs)
 				meta(name="msapplication-square310x310logo" content=meta.msapplicationSquare310x310logo)
 			if meta.msapplicationNotification !== null
 				meta(name="msapplication-notification" content=meta.msapplicationNotification)
+			if meta.msapplicationConfig !== null
+				meta(name="msapplication-config" content=meta.msapplicationConfig)
 			if meta.themeColor !== null
 				meta(name="theme-color" content=meta.themeColor)
 			if meta.formatDetection !== null && (typeof meta.formatDetection === 'string' || Object.values(meta.formatDetection).some(function (value) { return !value }))
@@ -252,6 +255,8 @@ html(class=html.classList)&attributes(html.attrs)
 				link(rel="apple-touch-icon" href=link.appleTouchIcon1024x1024 sizes="1024x1024")
 			if link.icon !== null
 				link(rel="icon" href=link.icon)
+			if link.shortcutIcon !== null
+				link(rel="shortcut icon" href=link.shortcutIcon)
 			if link.icon16x16 !== null
 				link(rel="icon" href=link.icon16x16 sizes="16x16")
 			if link.icon32x32 !== null

@@ -81,7 +81,7 @@ var toggleSlider = function() {
         hideItems(
             '.clients__list',
             '.clients__item',
-            '.clients__more',
+            '.more',
             6
         );
         console.log("Screen less than 320px");

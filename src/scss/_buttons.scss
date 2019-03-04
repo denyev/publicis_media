@@ -46,6 +46,42 @@
   }
 }
 
+.more {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid $black;
+  padding: rem(12) rem(60);
+  font-size: rem(16);
+  line-height: rem(21);
+  text-transform: uppercase;
+  background-color: unset;
+  transform: translateZ(0);
+  cursor: pointer;
+
+  &::before {
+    content: attr(aria-label);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: rem(12) rem(60);
+    width: 110%;
+    height: 110%;
+    background-color: $black;
+    transform: translateY(100%);
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    &::before {
+      color: $white;
+      transform: translateY(0);
+    }
+  }
+}
+
 @media (min-width: rem(768)) {
   .toggler {
     @include visually-hidden;
